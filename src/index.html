@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AngularApp</title>
+  <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body ng-app="AngularApp">
+  <div ui-view="nav"></div>
+  <div class="container" ui-view="container">
+  </div>
+</body>
+
+<!-- Importa o Angular -->
+<script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+<!-- Importa o plugin AngularUI Router https://github.com/angular-ui/ui-router -->
+<script type="text/javascript" src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<!-- Importa o plugin Angular Bootstrap https://github.com/angular-ui/bootstrap -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+<!-- Importa nossa aplicação Angular -->
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="routes.js"></script>
+<script type="text/javascript" src="controllers/home_controller.js"></script>
+</html>
